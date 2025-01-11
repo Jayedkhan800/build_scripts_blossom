@@ -17,8 +17,8 @@ echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
 
-# Initialize Lineage-22 repo
-repo init -u https://github.com/LineageOS/android.git -b lineage-22.0 --git-lfs
+# Initialize Misi-15 repo
+repo init -u https://github.com/Project-Mist-OS/manifest -b 15 --git-lfs
 echo "===================================="
 echo "Initializing Lineage-22 repo was success..."
 echo "===================================="
@@ -46,4 +46,4 @@ source build/envsetup.sh
 echo "===================================="
 echo "Building Lineage-20..."
 echo "===================================="
-brunch blossom-userdebug || brunch blossom
+mistify blossom userdebug || mist b
