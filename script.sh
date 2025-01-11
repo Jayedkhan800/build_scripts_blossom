@@ -1,4 +1,4 @@
-#Lineage-20 build_script_blossom
+#Lineage-22 build_script_blossom
 
 # Remove some stuffs
 rm -rf .repo/local_manifests/ 
@@ -12,15 +12,15 @@ echo "Removing stuffs success..."
 echo "===================================="
 
 # Clone local_manifests repository
-git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b Lineage-20 .repo/local_manifests
+git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b Lineage-22 .repo/local_manifests
 echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
 
-# Initialize Lineage-20 repo
-repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
+# Initialize Lineage-22 repo
+repo init -u https://github.com/LineageOS/android.git -b lineage-22.0 --git-lfs
 echo "===================================="
-echo "Initializing Lineage-20 repo was success..."
+echo "Initializing Lineage-22 repo was success..."
 echo "===================================="
 
 # Sync the repositories
@@ -33,7 +33,7 @@ echo "===================================="
 echo "===================================="
 echo "Adding exports..."
 echo "===================================="
-export BUILD_USERNAME=AsTechpro20
+export BUILD_USERNAME=Jayed Khan
 export BUILD_HOSTNAME=crave
 
 # Set up build environment
