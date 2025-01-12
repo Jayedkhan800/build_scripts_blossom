@@ -17,10 +17,10 @@ echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
 
-# Initialize Misi-15 repo
-repo init -u https://github.com/Project-Mist-OS/manifest -b 15 --git-lfs
+# Initialize Alpha-15 repo
+repo init -u https://github.com/alphadroid-project/manifest -b alpha-15.1-wip --git-lfs
 echo "===================================="
-echo "Initializing Lineage-22 repo was success..."
+echo "Initializing Alpha-15 repo was success..."
 echo "===================================="
 
 # Sync the repositories
@@ -50,6 +50,6 @@ source build/envsetup.sh
 
 #Building Lineage-20
 echo "===================================="
-echo "Building Lineage-20..."
+echo "Building Alpha-15..."
 echo "===================================="
 source build/envsetup.sh || brunch blossom 
