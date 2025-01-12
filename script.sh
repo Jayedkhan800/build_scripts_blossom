@@ -12,7 +12,7 @@ echo "Removing stuffs success..."
 echo "===================================="
 
 # Clone local_manifests repository
-git clone https://github.com/Jayedkhan800/local_manifests_blossom.git -b Misi-15 .repo/local_manifests
+git clone https://github.com/Jayedkhan800/local_manifests_blossom.git -b Alpha-15 .repo/local_manifests
 echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
@@ -52,4 +52,4 @@ source build/envsetup.sh
 echo "===================================="
 echo "Building Lineage-20..."
 echo "===================================="
-mistify blossom userdebug || mist b
+source build/envsetup.sh || brunch blossom 
