@@ -11,39 +11,11 @@ echo "===================================="
 echo "Removing stuffs success..."
 echo "===================================="
 
-# Clone local_manifests repository
-git clone https://github.com/Jayedkhan800/local_manifests_blossom.git -b Misi-15 .repo/local_manifests
-echo "===================================="
-echo "Cloning local_manifests was success..."
-echo "===================================="
-
-# Initialize Lineage-22 repo
-repo init -u https://github.com/LineageOS/android.git -b lineage-22.0 --git-lfs
-echo "===================================="
-echo "Initializing Lineage-22 repo was success..."
-echo "===================================="
-
+repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault
 # Sync the repositories
 /opt/crave/resync.sh || repo sync
 echo "===================================="
 echo "Syncing the repositories was success..."
 echo "===================================="
 
-# Exports
-echo "===================================="
-echo "Adding exports..."
-echo "===================================="
-export BUILD_USERNAME=Jayed Khan
-export BUILD_HOSTNAME=crave
-
-# Set up build environment
-echo "===================================="
-echo "Setting up build environment..."
-echo "===================================="
-source build/envsetup.sh
-
-#Building Lineage-20
-echo "===================================="
-echo "Building Lineage-20..."
-echo "===================================="
-brunch blossom-userdebug || brunch blossom
+repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
