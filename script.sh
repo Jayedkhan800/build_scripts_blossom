@@ -11,8 +11,7 @@ echo "===================================="
 echo "Removing stuffs success..."
 echo "===================================="
 
-repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault
-# Sync the repositories
+repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
 /opt/crave/resync.sh || repo sync
 echo "===================================="
 echo "Syncing the repositories was success..."
