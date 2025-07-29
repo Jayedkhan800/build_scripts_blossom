@@ -12,19 +12,19 @@ echo "Removing stuffs success..."
 echo "===================================="
 
 # Clone local_manifests repository
-git clone https://github.com/Jayedkhan800/local_manifests_blossom.git -b Misi-15 .repo/local_manifests
+git clone https://github.com/Jayedkhan800/local_manifests_blossom.git -b Derp_14 .repo/local_manifests
 echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
 
 # Initialize Lineage-22 repo
-repo init -u https://github.com/LineageOS/android.git -b lineage-22.0 --git-lfs
+repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 14
 echo "===================================="
 echo "Initializing Lineage-22 repo was success..."
 echo "===================================="
 
 # Sync the repositories
-/opt/crave/resync.sh || repo sync
+/opt/crave/resync.sh || repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 echo "===================================="
 echo "Syncing the repositories was success..."
 echo "===================================="
@@ -46,4 +46,4 @@ source build/envsetup.sh
 echo "===================================="
 echo "Building Lineage-20..."
 echo "===================================="
-brunch blossom-userdebug || brunch blossom
+lunch derp_blosson-userdebug || mka derp
