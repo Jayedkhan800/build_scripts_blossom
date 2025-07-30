@@ -18,7 +18,7 @@ echo "Cloning local_manifests was success..."
 echo "===================================="
 
 # Initialize Lineage-22 repo
-repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 14
+repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 13
 echo "===================================="
 echo "Initializing Lineage-22 repo was success..."
 echo "===================================="
