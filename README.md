@@ -2,7 +2,7 @@
 <p align="center" id="description">Build Script for Lineage-20 </p>
 
 ```
-curl https://raw.githubusercontent.com/AsTechpro20/build_scripts_blossom/Lineage-20/script.sh | bash
+curl https://raw.githubusercontent.com/Jayedkhan800/build_scripts_blossom/Lineage-20/script.sh | bash
 ```
 
 <h2>For crave:</h2>
