@@ -12,7 +12,7 @@ echo "Removing stuffs success..."
 echo "===================================="
 
 # Clone local_manifests repository
-git clone https://github.com/Jayedkhan800/local_manifests_blossom.git -b lineage-21 .repo/local_manifests
+git clone https://github.com/Jayedkhan800/local_manifests_blossom.git -b derpfest_stable-14 .repo/local_manifests
 echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
