@@ -8,5 +8,5 @@ curl https://raw.githubusercontent.com/ Jayedkhan800/build_scripts_blossom/Alpha
 <h2>For crave:</h2>
 
 ```
-crave run --no-patch -- "curl https://raw.githubusercontent.com/ Jayedkhan800/build_scripts_blossom/Misi-15/script.sh | bash"
+crave run --no-patch -- "curl https://raw.githubusercontent.com/ Jayedkhan800/build_scripts_blossom/Alpha-15/script.sh | bash"
 ```
