@@ -18,7 +18,7 @@ echo "Cloning local_manifests was success..."
 echo "===================================="
 
 # Initialize Lineage-22 repo
-repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 14
+repo init -u https://github.com/Project-Mist-OS/manifest -b vic --git-lfs
 echo "===================================="
 echo "Initializing Lineage-22 repo was success..."
 echo "===================================="
@@ -30,20 +30,20 @@ echo "Syncing the repositories was success..."
 echo "===================================="
 
 # Exports
-echo "===================================="
-echo "Adding exports..."
-echo "===================================="
-export BUILD_USERNAME=Jayed Khan
-export BUILD_HOSTNAME=crave
+#echo "===================================="
+#echo "Adding exports..."
+#echo "===================================="
+#export BUILD_USERNAME=Jayed Khan
+#export BUILD_HOSTNAME=crave
 
 # Set up build environment
-echo "===================================="
-echo "Setting up build environment..."
-echo "===================================="
-source build/envsetup.sh
+#echo "===================================="
+#echo "Setting up build environment..."
+#echo "===================================="
+#source build/envsetup.sh
 
 #Building Lineage-20
-echo "===================================="
-echo "Building Lineage-20..."
-echo "===================================="
-lunch derp_blosson-userdebug || mka derp
+#eecho "===================================="
+#echo "Building Lineage-20..."
+#echo "===================================="
+#lunch derp_blosson-userdebug || mka derp
