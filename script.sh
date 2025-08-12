@@ -12,13 +12,13 @@ echo "Removing stuffs success..."
 echo "===================================="
 
 # Clone local_manifests repository
-git clone https://github.com/Jayedkhan800/local_manifests_blossom.git -b Misi-15 .repo/local_manifests
+git clone https://github.com/Jayedkhan800/local_manifests_blossom.git -b lineage-21 .repo/local_manifests
 echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
 
 # Initialize Misi-15 repo
-repo init -u https://github.com/Project-Mist-OS/manifest -b 15 --git-lfs
+repo init -u https://github.com/Project-Mist-OS/manifest -b vic --git-lfs
 echo "===================================="
 echo "Initializing Lineage-22 repo was success..."
 echo "===================================="
@@ -52,4 +52,4 @@ source build/envsetup.sh
 echo "===================================="
 echo "Building Lineage-20..."
 echo "===================================="
-mistify blossom userdebug || mist b
+mistify blossom user || mist b
