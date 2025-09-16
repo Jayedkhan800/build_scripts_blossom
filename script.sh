@@ -40,10 +40,10 @@ export BUILD_HOSTNAME=crave
 #echo "===================================="
 #echo "Setting up build environment..."
 #echo "===================================="
-#source build/envsetup.sh
+source build/envsetup.sh
 
 #Building Lineage-20
 #eecho "===================================="
 #echo "Building Lineage-20..."
 #echo "===================================="
-#lunch derp_blosson-userdebug || mka derp
+mistify blossom userdebug || mist b
