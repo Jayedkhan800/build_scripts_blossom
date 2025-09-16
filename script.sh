@@ -12,13 +12,13 @@ echo "Removing stuffs success..."
 echo "===================================="
 
 # Clone local_manifests repository
-git clone https://github.com/Jayedkhan800/local_manifests_blossom.git -b lineage-21 .repo/local_manifests
+#git clone https://github.com/Jayedkhan800/local_manifests_blossom.git -b lineage-21 .repo/local_manifests
 echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
 
 # Initialize Lineage-22 repo
-repo init -u https://github.com/Project-Mist-OS/manifest -b vic --git-lfs
+repo init -u https://github.com/Project-Mist-OS/manifest -b 16 --git-lfs
 echo "===================================="
 echo "Initializing Lineage-22 repo was success..."
 echo "===================================="
@@ -34,7 +34,7 @@ echo "===================================="
 #echo "Adding exports..."
 #echo "===================================="
 #export BUILD_USERNAME=Jayed Khan
-#export BUILD_HOSTNAME=crave
+export BUILD_HOSTNAME=crave
 
 # Set up build environment
 #echo "===================================="
